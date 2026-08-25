@@ -47,6 +47,19 @@ h1{ font-size:22px; margin:0 0 3px; line-height:1.2; }
 .manager-resource-title{ font-weight:800; font-size:13px; margin-bottom:2px; }
 .manager-resource-description{ color:var(--muted); font-size:11px; line-height:1.4; }
 .manager-resource-link{ flex-shrink:0; text-decoration:none; background:var(--primary); color:#fff; padding:8px 11px; border-radius:9px; font-size:12px; font-weight:700; }
+.manager-faq{ padding:14px; background:#fff; border:1px solid var(--border); border-radius:11px; display:grid; gap:8px; }
+.manager-faq-header{ margin-bottom:2px; }
+.manager-faq-item{ border:1px solid var(--border); border-radius:9px; padding:0; overflow:hidden; }
+.manager-faq-item summary{ cursor:pointer; list-style:none; padding:10px 12px; font-weight:700; font-size:12.5px; display:flex; align-items:center; gap:8px; }
+.manager-faq-item summary::-webkit-details-marker{ display:none; }
+.manager-faq-item summary::before{ content:"+"; color:var(--primary); font-weight:900; width:14px; flex-shrink:0; }
+.manager-faq-item[open] summary::before{ content:"–"; }
+.manager-faq-item[open] summary{ border-bottom:1px solid var(--border); background:var(--bg); }
+.manager-faq-answer{ padding:12px 14px; font-size:12.5px; line-height:1.55; color:var(--text); }
+.manager-faq-answer p{ margin:0 0 8px; }
+.manager-faq-answer p:last-child{ margin-bottom:0; }
+.manager-faq-answer ul,.manager-faq-answer ol{ margin:0 0 8px; padding-left:18px; }
+.manager-faq-answer li{ margin-bottom:3px; }
 .manager-pin-row{ display:flex; gap:8px; }
 .manager-pin-input{ flex:1; min-width:0; border:1px solid var(--border); border-radius:10px; padding:10px 12px; background:#fff; text-align:center; letter-spacing:.35em; font-weight:800; }
 .manager-pin-submit{ border:0; border-radius:10px; padding:10px 14px; background:var(--primary); color:#fff; font-weight:800; cursor:pointer; }
