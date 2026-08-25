@@ -67,59 +67,14 @@
       </div>
 
       <!--
-        ⚠️ Ne mettez ici que des liens vers des ressources déjà
-        protégées par une vraie authentification (Drive/SharePoint
-        restreint, intranet avec identifiants...). Ne saisissez
-        jamais de contenu confidentiel en clair : ce fichier est
-        sur un dépôt GitHub public, donc son code (y compris ces
-        liens) est lisible par tous, code d'accès ou non. Voir le
-        commentaire en haut de manager-gate.js.
+        Ce conteneur reste vide dans le code source : les
+        ressources managers sont chiffrées (voir
+        MANAGER_RESOURCES_CIPHERTEXT dans manager-gate.js) et
+        ne sont générées ici en HTML par JavaScript qu'après
+        saisie du bon code. Ne mettez jamais de contenu ici en
+        clair.
       -->
-      <div class="manager-resources" id="managerResources" hidden>
-
-        <div class="manager-resource">
-          <div class="manager-resource-info">
-            <div class="manager-resource-title">
-              📋 Guide manager — accueil d'un nouvel agent
-            </div>
-            <div class="manager-resource-description">
-              Ajoutez ici le lien vers votre guide ou votre procédure manager.
-            </div>
-          </div>
-          <a class="manager-resource-link" href="#" onclick="return false;">
-            À renseigner
-          </a>
-        </div>
-
-        <div class="manager-resource">
-          <div class="manager-resource-info">
-            <div class="manager-resource-title">
-              🧭 Checklist du premier jour
-            </div>
-            <div class="manager-resource-description">
-              Ajoutez ici le lien vers la checklist destinée aux encadrants.
-            </div>
-          </div>
-          <a class="manager-resource-link" href="#" onclick="return false;">
-            À renseigner
-          </a>
-        </div>
-
-        <div class="manager-resource">
-          <div class="manager-resource-info">
-            <div class="manager-resource-title">
-              📞 Contacts utiles managers
-            </div>
-            <div class="manager-resource-description">
-              Ajoutez ici le lien vers votre annuaire ou fiche de contacts.
-            </div>
-          </div>
-          <a class="manager-resource-link" href="#" onclick="return false;">
-            À renseigner
-          </a>
-        </div>
-
-      </div>
+      <div class="manager-resources" id="managerResources" hidden></div>
 
     </section>
 
