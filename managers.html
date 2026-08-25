@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Espace managers — Assistant RH — Mairie de Conflans-Sainte-Honorine</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="app">
+
+  <header class="header">
+    <div class="brand">
+      <div class="logo">🔐</div>
+      <div>
+        <h1>Espace managers</h1>
+        <div class="subtitle">Assistant RH — Mairie de Conflans-Sainte-Honorine</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="welcome">
+
+      <p>
+        <a href="index.html">← Retour à l'assistant</a>
+      </p>
+
+      <div id="managerGate">
+
+        <h2>🔑 Ressources réservées aux managers</h2>
+
+        <p style="color:var(--muted); font-size:13px; line-height:1.5;">
+          Saisissez le code à 4 chiffres transmis aux managers pour accéder à cette page.
+          Ce code évite qu'un agent tombe accidentellement sur cette page ; ce n'est pas
+          une protection contre un accès volontaire non autorisé.
+        </p>
+
+        <div class="manager-pin-row">
+          <input
+            id="managerPin"
+            class="manager-pin-input"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]{4}"
+            maxlength="4"
+            autocomplete="off"
+            placeholder="••••"
+            aria-label="Code managers à 4 chiffres">
+
+          <button
+            id="managerPinSubmit"
+            class="manager-pin-submit"
+            type="button">
+            Déverrouiller
+          </button>
+        </div>
+
+        <div id="managerPinError" class="manager-pin-error">
+          Code incorrect.
+        </div>
+
+      </div>
+
+      <!--
+        ⚠️ Ne mettez ici que des liens vers des ressources déjà
+        protégées par une vraie authentification (Drive/SharePoint
+        restreint, intranet avec identifiants...). Ne saisissez
+        jamais de contenu confidentiel en clair : ce fichier est
+        sur un dépôt GitHub public, donc son code (y compris ces
+        liens) est lisible par tous, code d'accès ou non. Voir le
+        commentaire en haut de manager-gate.js.
+      -->
+      <div class="manager-resources" id="managerResources" hidden>
+
+        <div class="manager-resource">
+          <div class="manager-resource-info">
+            <div class="manager-resource-title">
+              📋 Guide manager — accueil d'un nouvel agent
+            </div>
+            <div class="manager-resource-description">
+              Ajoutez ici le lien vers votre guide ou votre procédure manager.
+            </div>
+          </div>
+          <a class="manager-resource-link" href="#" onclick="return false;">
+            À renseigner
+          </a>
+        </div>
+
+        <div class="manager-resource">
+          <div class="manager-resource-info">
+            <div class="manager-resource-title">
+              🧭 Checklist du premier jour
+            </div>
+            <div class="manager-resource-description">
+              Ajoutez ici le lien vers la checklist destinée aux encadrants.
+            </div>
+          </div>
+          <a class="manager-resource-link" href="#" onclick="return false;">
+            À renseigner
+          </a>
+        </div>
+
+        <div class="manager-resource">
+          <div class="manager-resource-info">
+            <div class="manager-resource-title">
+              📞 Contacts utiles managers
+            </div>
+            <div class="manager-resource-description">
+              Ajoutez ici le lien vers votre annuaire ou fiche de contacts.
+            </div>
+          </div>
+          <a class="manager-resource-link" href="#" onclick="return false;">
+            À renseigner
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="manager-gate.js"></script>
+
+</body>
+</html>
